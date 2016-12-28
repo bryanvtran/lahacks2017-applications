@@ -1,0 +1,63 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  @include outer-container();
+  height: 100%;
+}
+
+ .app-nav-logo {
+   margin: 20px;
+   height: 80px;
+ }
+
+$medium: new-breakpoint(max-width $medium-screen);
+
+section.app-body {
+  @include row();
+  header.app-nav-group {
+    @include shift(3);
+    @include span-columns(6);
+    @include media($medium) {
+      @include shift(1);
+      @include span-columns(10);
+    }
+    margin-bottom: 3em;
+  }
+  .nav-group-item {
+      @include span-columns(4);
+  }
+
+  form {
+    @include shift(3);
+    @include span-columns(6);
+    @include media($medium) {
+      @include shift(1);
+      @include span-columns(10);
+    }
+
+    section.app-main {
+      height: 500px;
+      overflow: scroll;
+
+      .input-group {
+        @include row();
+
+        .select-date {
+          @include span-columns(4);
+        }
+      }
+    }
+    a.continue-btn {
+      float: right;
+    }
+  }
+}
