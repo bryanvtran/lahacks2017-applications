@@ -505,6 +505,13 @@ select {
       background-size: 20px;
       background-repeat: no-repeat;
       background-position: 98% 50%; }
+  .input-group .team-member {
+    display: inline-block;
+    padding: 15px; }
+  .input-group .team-member-field {
+    display: inline-block;
+    width: 80%;
+    float: right; }
   .input-group select {
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
@@ -515,6 +522,42 @@ select {
     .input-group select:focus {
       outline: none;
       border-color: #fd5c63; }
+  .input-group .radio-group {
+    margin-top: 1.5em; }
+    .input-group .radio-group label {
+      margin-left: 25.58941%;
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 6.17215%;
+      position: relative;
+      display: inline-block;
+      text-transform: lowercase; }
+      .input-group .radio-group label:last-child {
+        margin-right: 0; }
+    .input-group .radio-group input[type="radio"] {
+      display: none; }
+    .input-group .radio-group input[type="radio"]:checked + label span.radio:before {
+      background-color: #66bfbf;
+      box-shadow: 0 0 0pt 2pt #66bfbf; }
+    .input-group .radio-group span.radio {
+      height: 20px; }
+      .input-group .radio-group span.radio:before, .input-group .radio-group span.radio:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto; }
+      .input-group .radio-group span.radio:before {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background-color: #fff;
+        border: 3px solid #fff;
+        box-shadow: 0 0 0pt 2pt #66bfbf;
+        margin-left: 50px; }
+      .input-group .radio-group span.radio:hover {
+        cursor: pointer; }
 
 html {
   box-sizing: border-box; }
@@ -692,7 +735,7 @@ hr {
 a.active {
   color: #fd5c63; }
 
-.input-group label {
+.input-group label, .input-group .team-member {
   font-size: .8em;
   text-transform: uppercase; }
 

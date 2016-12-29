@@ -21,37 +21,37 @@
         </ul>
       </header>
       <form>
-        <section class="app-main">
+        <section id="app-main" class="app-main" style="display: none;">
             <div class="input-group">
-              <label>First Name</label>
+              <label for="firstName">First Name</label>
               <input type="text" name="firstName" value="" required>
             </div>
             <div class="input-group">
-              <label>Last Name</label>
+              <label for="lastName">Last Name</label>
               <input type="text" name="lastName" value="" required>
             </div>
             <div class="input-group">
-              <label>Email</label>
+              <label for="email">Email</label>
               <input type="email" name="email" value="" required>
             </div>
             <div class="input-group">
-              <label>School</label>
-              <select required>
+              <label for="school">School</label>
+              <select name="school" required>
                 <option value="">School</option>
                 <option value="test">Test</option>
               </select>
             </div>
             <div class="input-group">
-              <label>Expected Graduation Date</label>
-              <select class="select-date" required>
+              <label for="gradDate">Expected Graduation Date</label>
+              <select name="gradMonth" class="select-date" required>
                 <option value="">Month</option>
                 <option value="1">Janurary</option>
               </select>
-              <select class="select-date" required>
+              <select name="gradDay" class="select-date" required>
                 <option value="">Day</option>
                 <option value="1">01</option>
               </select>
-              <select class="select-date" required>
+              <select name="gradYear" sclass="select-date" required>
                 <option value="">Year</option>
                 <option value="2016">2016</option>
               </select>
@@ -84,12 +84,45 @@
               <input type="text" name="tee" value="" required>
             </div>
         </section>
+
         <!-- TODO only show up when form is completed -->
-        <a href="#" class="continue-btn">Next: Team</a>
+        <a href="#" class="continue-btn" style="display: none;" id="next-team">Next: Team</a>
+
+        <section id="app-teams"  class="app-main">
+          <div class="input-group">
+            <label>Do you have a team?</label>
+            <div class="radio-group">
+              <input type="radio" id="team-yes" name="team" value="yes">
+              <label for="team-yes"><span class="radio">yes</span></label>
+              <input type="radio" id="team-no" name="team" value="no">
+              <label for="team-no"><span class="radio">no</span></label>
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Are you the team leader?</label>
+            <div class="radio-group">
+              <input type="radio" id="leader-yes" name="leader" value="yes">
+              <label for="leader-yes"><span class="radio">yes</span></label>
+              <input type="radio" id="leader-no" name="leader" value="no">
+              <label for="leader-no"><span class="radio">no</span></label>
+            </div>
+          </div>
+          <div class="input-group">
+            <label>Enter Team Member Addresses</label>
+            <div class="team-member">Teammate 1</div>
+            <input class="team-member-field" type="text" name="teammate1" value="" required>
+            <div class="team-member">Teammate 2</div>
+            <input class="team-member-field" type="text" name="teammate2" value="" required>
+            <div class="team-member">Teammate 3</div>
+            <input class="team-member-field" type="text" name="teammate3" value="" required>
+          </div>
+        </section>
+
       </form>
     </section>
     <footer class="app-progress">
       <!-- TODO Progress bar -->
     </footer>
+    <script src="js/main.js" charset="utf-8"></script>
   </body>
 </html>
