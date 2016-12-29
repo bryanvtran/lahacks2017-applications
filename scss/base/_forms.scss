@@ -88,7 +88,7 @@ select {
   input, select, textarea {
     background-color: #fff;
     border: none;
-    border-bottom: solid 1px #111;
+    border-bottom: solid 1px $gray;
     border-radius: 0px;
     box-shadow: none;
 
@@ -96,11 +96,22 @@ select {
       box-shadow: none;
       border-color: $action-color;
     }
+
+    &:valid {
+      background: url("../img/checkmark.svg");
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: 98% 50%;
+    }
+
+    &:invalid {
+    }
   }
   select {
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'><path d='M5 8l4 4 4-4z'/></svg>");
+    background-size: 28px;
     background-position: 100% 50%;
     background-repeat: no-repeat;
 

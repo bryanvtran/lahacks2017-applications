@@ -44,6 +44,7 @@
 
 a.continue-btn {
   // display: none;
+  position: relative;
   background: none;
   color: $orange;
   text-transform: uppercase;
@@ -53,8 +54,9 @@ a.continue-btn {
     color: $orange;
     outline: none;
   }
-  svg {
-    padding-top: 2px;
+  &:after {
+    content: url('../img/arrow-right.svg');
+    position: absolute;
+    padding-top: 1px;
   }
-
 }

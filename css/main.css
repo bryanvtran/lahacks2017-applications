@@ -410,6 +410,7 @@ button, [type='button'], [type='reset'], [type='submit'] {
   font-size: 1.5em; }
 
 a.continue-btn {
+  position: relative;
   background: none;
   color: #ffb900;
   text-transform: uppercase;
@@ -418,8 +419,10 @@ a.continue-btn {
     background: none;
     color: #ffb900;
     outline: none; }
-  a.continue-btn svg {
-    padding-top: 2px; }
+  a.continue-btn:after {
+    content: url("../img/arrow-right.svg");
+    position: absolute;
+    padding-top: 1px; }
 
 fieldset {
   background-color: transparent;
@@ -491,16 +494,22 @@ select {
   .input-group input, .input-group select, .input-group textarea {
     background-color: #fff;
     border: none;
-    border-bottom: solid 1px #111;
+    border-bottom: solid 1px #737373;
     border-radius: 0px;
     box-shadow: none; }
     .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
       box-shadow: none;
       border-color: #fd5c63; }
+    .input-group input:valid, .input-group select:valid, .input-group textarea:valid {
+      background: url("../img/checkmark.svg");
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: 98% 50%; }
   .input-group select {
     -webkit-appearance: none;
     -webkit-border-radius: 0px;
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='18' height='18' viewBox='0 0 18 18'><path d='M5 8l4 4 4-4z'/></svg>");
+    background-size: 28px;
     background-position: 100% 50%;
     background-repeat: no-repeat; }
     .input-group select:focus {
