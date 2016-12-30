@@ -607,6 +607,15 @@ section.app-body {
         width: 82.94039%; }
         section.app-body header.app-nav-group:last-child {
           margin-right: 0; } }
+    @media screen and (max-width: 900px) {
+      section.app-body header.app-nav-group {
+        margin-left: 17.05961%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
+        section.app-body header.app-nav-group:last-child {
+          margin-right: 0; } }
   section.app-body .nav-group-item {
     float: left;
     display: block;
@@ -629,6 +638,15 @@ section.app-body {
         display: block;
         margin-right: 2.35765%;
         width: 82.94039%; }
+        section.app-body form:last-child {
+          margin-right: 0; } }
+    @media screen and (max-width: 900px) {
+      section.app-body form {
+        margin-left: 17.05961%;
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 65.88078%; }
         section.app-body form:last-child {
           margin-right: 0; } }
     section.app-body form section.app-main {

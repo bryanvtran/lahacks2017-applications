@@ -20,15 +20,22 @@ body {
  }
 
 $medium: new-breakpoint(max-width $medium-screen);
+$large: new-breakpoint(max-width $large-screen);
 
 section.app-body {
   @include row();
   header.app-nav-group {
     @include shift(3);
     @include span-columns(6);
+    
     @include media($medium) {
       @include shift(1);
       @include span-columns(10);
+    }
+
+    @include media($large) {
+      @include shift(2);
+      @include span-columns(8);
     }
     margin-bottom: 3em;
   }
@@ -42,6 +49,10 @@ section.app-body {
     @include media($medium) {
       @include shift(1);
       @include span-columns(10);
+    }
+    @include media($large) {
+      @include shift(2);
+      @include span-columns(8);
     }
 
     section.app-main {
