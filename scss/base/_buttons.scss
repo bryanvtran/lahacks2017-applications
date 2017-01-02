@@ -40,6 +40,22 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.5em;
+
+  a.active {
+    position: relative;
+    &:before {
+      content: url('../images/block-2.svg');
+      position: absolute;
+      left: -22px;
+      top: -17px;
+    }
+    &:after {
+      content: url('../images/block-1.svg');
+      position: absolute;
+      right: -20px;
+      bottom: -18px;
+    }
+  }
 }
 
 a.continue-btn {
