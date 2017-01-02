@@ -424,17 +424,20 @@ button, [type='button'], [type='reset'], [type='submit'] {
 a.continue-btn {
   position: relative;
   background: none;
-  color: #ffb900;
+  color: #66bfbf;
   text-transform: uppercase;
   font-size: 1.2em; }
   a.continue-btn:hover, a.continue-btn:focus, a.continue-btn:active {
     background: none;
-    color: #ffb900;
+    color: #66bfbf;
     outline: none; }
   a.continue-btn:after {
-    content: url("../images/arrow-right.svg");
-    position: absolute;
-    padding-top: 1px; }
+    content: '';
+    padding: 10px 10px;
+    background: url("../images/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center; }
 
 fieldset {
   background-color: transparent;
@@ -519,10 +522,9 @@ select {
       background-position: 98% 50%; }
   .input-group .team-member {
     display: inline-block;
-    padding: 15px; }
+    padding: 15px 0; }
   .input-group .team-member-field {
     display: inline-block;
-    width: 80%;
     float: right; }
   .input-group select {
     -webkit-appearance: none;
@@ -663,7 +665,11 @@ section.app-body {
           margin-right: 0; } }
     section.app-body form section.app-main {
       height: 500px;
+      margin-bottom: .5em;
       overflow: scroll; }
+      @media screen and (max-width: 600px) {
+        section.app-body form section.app-main {
+          height: 350px; } }
       section.app-body form section.app-main .input-group {
         display: block; }
         section.app-body form section.app-main .input-group::after {
@@ -677,8 +683,46 @@ section.app-body {
           width: 31.76157%; }
           section.app-body form section.app-main .input-group .select-date:last-child {
             margin-right: 0; }
+        section.app-body form section.app-main .input-group .team-group {
+          display: block; }
+          section.app-body form section.app-main .input-group .team-group::after {
+            clear: both;
+            content: "";
+            display: block; }
+          section.app-body form section.app-main .input-group .team-group .team-member {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 23.23176%; }
+            section.app-body form section.app-main .input-group .team-group .team-member:last-child {
+              margin-right: 0; }
+          section.app-body form section.app-main .input-group .team-group .team-member-field {
+            float: left;
+            display: block;
+            margin-right: 2.35765%;
+            width: 74.41059%; }
+            section.app-body form section.app-main .input-group .team-group .team-member-field:last-child {
+              margin-right: 0; }
     section.app-body form a.continue-btn {
       float: right; }
+
+footer.app-progress {
+  display: block;
+  margin-top: 3em; }
+  footer.app-progress::after {
+    clear: both;
+    content: "";
+    display: block; }
+  @media screen and (max-width: 600px) {
+    footer.app-progress {
+      margin-top: 0; } }
+  footer.app-progress svg {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    footer.app-progress svg:last-child {
+      margin-right: 0; }
 
 ul,
 ol {
@@ -703,6 +747,19 @@ img,
 picture {
   margin: 0;
   max-width: 100%; }
+
+svg .stage-1 > g {
+  fill: #fd5c63; }
+svg .stage-2 > g {
+  fill: #ffb900; }
+svg .stage-3 > g {
+  fill: #66bfbf; }
+svg .stage-4 > g {
+  fill: #fd5c63; }
+svg .stage-5 > g {
+  fill: #4c4491; }
+svg .stage-6 > g {
+  fill: #66bfbf; }
 
 table {
   border-collapse: collapse;

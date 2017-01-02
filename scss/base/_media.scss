@@ -7,3 +7,29 @@ picture {
   margin: 0;
   max-width: 100%;
 }
+
+svg {
+  .stage-1 > g {
+    fill: $red;
+  }
+
+  .stage-2 > g {
+    fill: $orange;
+  }
+
+  .stage-3 > g {
+    fill: $blue;
+  }
+
+  .stage-4 > g {
+    fill: $red;
+  }
+
+  .stage-5 > g {
+    fill: $purple;
+  }
+
+  .stage-6 > g{
+    fill: $blue;
+  }
+}

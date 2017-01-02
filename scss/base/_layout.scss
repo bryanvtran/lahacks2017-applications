@@ -27,7 +27,7 @@ section.app-body {
   header.app-nav-group {
     @include shift(3);
     @include span-columns(6);
-    
+
     @include media($medium) {
       @include shift(1);
       @include span-columns(10);
@@ -57,7 +57,12 @@ section.app-body {
 
     section.app-main {
       height: 500px;
+      margin-bottom: .5em;
       overflow: scroll;
+
+      @include media($medium) {
+        height: 350px;
+      }
 
       .input-group {
         @include row();
@@ -65,10 +70,33 @@ section.app-body {
         .select-date {
           @include span-columns(4);
         }
+
+        .team-group {
+          @include row();
+          .team-member {
+            @include span-columns(3);
+          }
+
+          .team-member-field {
+            @include span-columns(9);
+          }
+        }
       }
     }
     a.continue-btn {
       float: right;
     }
+  }
+}
+
+footer.app-progress {
+  @include row();
+  margin-top: 3em;
+  @include media($medium) {
+    margin-top: 0;
+  }
+
+  svg {
+    @include span-columns(12);
   }
 }
