@@ -420,7 +420,7 @@ a.continue-btn {
     color: #ffb900;
     outline: none; }
   a.continue-btn:after {
-    content: url("../img/arrow-right.svg");
+    content: url("../images/arrow-right.svg");
     position: absolute;
     padding-top: 1px; }
 
@@ -501,7 +501,7 @@ select {
       box-shadow: none;
       border-color: #fd5c63; }
     .input-group input:valid, .input-group select:valid, .input-group textarea:valid {
-      background: url("../img/checkmark.svg");
+      background: url("../images/checkmark.svg");
       background-size: 20px;
       background-repeat: no-repeat;
       background-position: 98% 50%; }
