@@ -637,6 +637,14 @@ section.app-body {
     width: 31.76157%; }
     section.app-body .nav-group-item:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 600px) {
+      section.app-body .nav-group-item {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        section.app-body .nav-group-item:last-child {
+          margin-right: 0; } }
   section.app-body form {
     margin-left: 25.58941%;
     float: left;
