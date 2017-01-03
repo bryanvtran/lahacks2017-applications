@@ -407,7 +407,7 @@ button, [type='button'], [type='reset'], [type='submit'] {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 1.5em; }
+  font-size: 1.2em; }
   .nav-group-item a.active {
     position: relative; }
     .nav-group-item a.active:before {
@@ -516,10 +516,16 @@ select {
       box-shadow: none;
       border-color: #fd5c63; }
     .input-group input:valid, .input-group select:valid, .input-group textarea:valid {
-      background: url("../images/checkmark.svg");
+      background: url("../images/check.svg");
       background-size: 20px;
       background-repeat: no-repeat;
       background-position: 98% 50%; }
+      /*adding in error warning */
+      .input-group textarea:invalid {
+        background: url("../images/exclamation.svg");
+        background-size: 2px;
+        background-repeat: no-repeat;
+        background-position: 98% 50%; }
   .input-group .team-member {
     display: inline-block;
     padding: 15px 0; }
@@ -713,7 +719,6 @@ section.app-body {
               margin-right: 0; }
     section.app-body form a.continue-btn {
       float: right; }
-
 footer.app-progress {
   display: block;
   margin-top: 3em; }
