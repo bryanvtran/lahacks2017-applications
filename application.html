@@ -24,11 +24,11 @@
         <section id="app-main" class="app-main" style="display: block;">
             <div class="input-group">
               <label for="firstName">First Name*</label>
-              <input type="text" name="firstName" value="" required>
+              <input class="valid" type="text" name="firstName" value="" required>
             </div>
             <div class="input-group">
               <label for="lastName">Last Name*</label>
-              <input type="text" name="lastName" value="" required>
+              <input class="invalid" type="text" name="lastName" value="" required>
             </div>
             <div class="input-group">
               <label for="email">Email*</label>
@@ -36,14 +36,14 @@
             </div>
             <div class="input-group">
               <label for="school">School*</label>
-              <select name="school" required>
+              <select class="valid" name="school" required>
                 <option value="">School</option>
                 <option value="test">Test</option>
               </select>
             </div>
             <div class="input-group">
               <label for="gradDate">Expected Graduation Date*</label>
-              <select name="gradMonth" class="select-date" required>
+              <select name="gradMonth" class="select-date invalid" required>
                 <option value="">Month</option>
                 <option value="1">Janurary</option>
               </select>
@@ -74,7 +74,7 @@
             <!-- don't think software/hardware questions need to be mandatory -->
             <div class="input-group">
               <label>Software?</label>
-              <textarea name="software" rows="3"></textarea>
+              <textarea class="valid" name="software" rows="3"></textarea>
             </div>
             <div class="input-group">
               <label>Hardware?</label>
@@ -89,6 +89,7 @@
               </select>
             </div>
         </section>
+
         <section id="app-teams" class="app-main" style="display: none;">
           <div class="input-group">
             <label>Do you have a team?</label>

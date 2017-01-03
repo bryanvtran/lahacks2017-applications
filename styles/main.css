@@ -515,13 +515,13 @@ select {
     .input-group input:focus, .input-group select:focus, .input-group textarea:focus {
       box-shadow: none;
       border-color: #fd5c63; }
-    .input-group input:valid, .input-group select:valid, .input-group textarea:valid {
+    .input-group input.valid, .input-group select.valid, .input-group textarea.valid {
       background: url("../images/check.svg");
       background-size: 20px;
       background-repeat: no-repeat;
       background-position: 98% 50%; }
       /*adding in error warning */
-      .input-group textarea:invalid {
+      .input-group textarea.invalid, .input-group input.invalid, .input-group select.invalid {
         background: url("../images/exclamation.svg");
         background-size: 2px;
         background-repeat: no-repeat;
