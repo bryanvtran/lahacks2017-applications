@@ -678,12 +678,10 @@ section.app-body {
         section.app-body form:last-child {
           margin-right: 0; } }
     section.app-body form section.app-main {
-      height: 500px;
-      margin-bottom: .5em;
-      overflow: scroll; }
-      @media screen and (max-width: 600px) {
+      margin-bottom: .5em;}
+      @media screen and (min-width: 600px) {
         section.app-body form section.app-main {
-          height: 350px; } }
+          min-height: 400px; } }
       section.app-body form section.app-main .input-group {
         display: block; }
         section.app-body form section.app-main .input-group::after {
