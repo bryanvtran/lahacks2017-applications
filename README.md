@@ -19,6 +19,52 @@ The part we can toggle is the list elements within the ul. We can add an "active
 <li class="nav-group-item"><a class="" href="#">Travel</a></li>
 ```
 
+## Valid/Invalid Form Inputs
+In order to add a checkmark at the end of the input, just add the class "valid" to the input field. To add an exclamation mark, add the class "invalid".
+
+Input:
+```HTML
+<div class="input-group">
+  <label for="firstName">First Name*</label>
+  <input class="valid" type="text" name="firstName" value="" required>
+</div>
+<div class="input-group">
+  <label for="lastName">Last Name*</label>
+  <input class="invalid" type="text" name="lastName" value="" required>
+</div>
+```
+
+Select:
+```HTML
+<div class="input-group">
+  <label for="school">School*</label>
+  <select class="valid" name="school" required>
+    <option value="">School</option>
+    <option value="test">Test</option>
+  </select>
+</div>
+
+<div class="input-group">
+  <label for="school">School*</label>
+  <select class="invalid" name="school" required>
+    <option value="">School</option>
+    <option value="test">Test</option>
+  </select>
+</div>
+```
+
+Textareas:
+```HTML
+<div class="input-group">
+  <label>Dietary Restrictions?*</label>
+  <input type="text" name="diet" value="" required>
+</div>
+<div class="input-group">
+  <label>Software?</label>
+  <textarea class="valid" name="software" rows="3"></textarea>
+</div>
+```
+
 ## Progress bar
 The progress bar is an svg divided into six different groups based on their colors along the bar. We have classes from "stage-1" to "stage-6" that can be added to color the blocks at the bottom.
 
@@ -39,7 +85,7 @@ The progress bar is an svg divided into six different groups based on their colo
 Each of these stages have block elements within them. So, as the applicant fills out the form, the "stage" classes should be added to indicate progress along the bar. We might need to add an id to each of these groups to identify them.
 
 ## Form Body
-Within the form body, there are blocks of code for each of the different parts of the applications. So far, we only have the form questions for the application and team part. 
+Within the form body, there are blocks of code for each of the different parts of the applications. So far, we only have the form questions for the application and team part.
 
 These questions are wrapped in a section with an id assocated with it like:
 
