@@ -1,0 +1,40 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fd5c63;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+p {
+  color: #737373;
+  font-size: 16px;
+  line-height: 28px; }
+
+button:focus {
+  outline: none; }
+
+.btn-outline {
+  background: none;
+  color: #fd5c63;
+  border: 1px solid #fd5c63; }
+  .btn-outline:hover {
+    background: none;
+    color: #fd5c63; }
+
+.btn-secondary {
+  background: #66bfbf; }
+  .btn-secondary:hover {
+    background: #409999; }
+
+.btn-secondary-outline {
+  background: none;
+  color: #66bfbf;
+  border: 1px solid #66bfbf; }
+  .btn-secondary-outline:hover {
+    background: none;
+    color: #66bfbf; }
+
+/*# sourceMappingURL=styles.css.map */
